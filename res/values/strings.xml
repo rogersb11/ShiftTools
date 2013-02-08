@@ -142,4 +142,8 @@
 
     <!-- About Activity -->
     <string name="label_info">Info</string>
+
+	<!-- misc settings -->
+	<string name="vibration_intensity">Vibration intensity</string>
+	<string name="label_vibration_intensity">Set vibration intensity</string>
 </resources>
