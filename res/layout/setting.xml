@@ -47,12 +47,5 @@
 		custom:path="@string/SETTINGS_DIR"
         android:negativeButtonText="@string/label_cancel"
         android:persistent="false"/>
-        
-    <PreferenceCategory android:title="@string/label_about" >
-        <PreferenceScreen
-            android:key="@string/key_about"
-            android:summary="@string/about_desc"
-            android:title="@string/about_text" />
-    </PreferenceCategory>
 
 </PreferenceScreen>

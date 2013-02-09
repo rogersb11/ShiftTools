@@ -7,7 +7,6 @@ package mobi.cyann.shifttools;
 import mobi.cyann.shifttools.PreferenceListFragment.OnPreferenceAttachedListener;
 import mobi.cyann.shifttools.services.ObserverService;
 import android.content.Intent;
-import android.net.Uri;
 import android.preference.EditTextPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -24,7 +23,7 @@ public class SettingFragment extends PreferenceListFragment implements OnPrefere
 		super(R.layout.setting);
 		setOnPreferenceAttachedListener(this);
 	}
-	
+
 	@Override
 	public void onPreferenceAttached(PreferenceScreen rootPreference, int xmlId) {
 		findPreference(getString(R.string.key_shifttools_service)).setOnPreferenceChangeListener(this);
@@ -32,20 +31,11 @@ public class SettingFragment extends PreferenceListFragment implements OnPrefere
 		findPreference(getString(R.string.key_save_settings)).setOnPreferenceClickListener(this);
 		findPreference(getString(R.string.key_save_settings)).setOnPreferenceChangeListener(this);
 		findPreference(getString(R.string.key_delete_settings)).setOnPreferenceChangeListener(this);
-		
-		Preference about = findPreference(getString(R.string.key_about));
-		about.setOnPreferenceClickListener(this);
-		about.setTitle(getString(R.string.app_name)+ " " + getString(R.string.app_version));
 	}
 
 	@Override
 	public boolean onPreferenceClick(Preference preference) {
-		if(preference.getKey().equals(getString(R.string.key_about))) {
-			Intent browse = new Intent();
-			browse.setAction(Intent.ACTION_VIEW);
-			browse.setData(Uri.parse(getString(R.string.shifttools_thread_url)));
-			startActivity(browse);
-		}else if(preference.getKey().equals(getString(R.string.key_save_settings))) {
+		if(preference.getKey().equals(getString(R.string.key_save_settings))) {
 			((EditTextPreference)preference).getEditText().setText("");
 		}
 		return false;
