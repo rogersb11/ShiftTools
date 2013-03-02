@@ -44,6 +44,7 @@
     <string name="key_restore_on_boot">key_restore_on_boot</string>
     <string name="key_restore_on_initd">key_restore_on_initd</string>
     <string name="key_shifttools_service">key_shifttools_service</string>
+    <string name="key_force_restore_on_boot">key_force_restore_on_boot</string>
     <string name="key_load_settings">key_load_settings</string>
     <string name="key_save_settings">key_save_settings</string>
     <string name="key_delete_settings">key_delete_settings</string>
