@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res/mobi.cyann.nstools">
+    xmlns:custom="http://schemas.android.com/apk/res/mobi.cyann.shifttools">
 
     <CheckBoxPreference
         android:defaultValue="true"
@@ -19,12 +19,12 @@
     
     <CheckBoxPreference
         android:defaultValue="false"
-        android:key="@string/key_nstools_service"
-        android:summaryOff="@string/summaryOff_nstools_service"
-        android:summaryOn="@string/summaryOn_nstools_service"
-        android:title="@string/label_nstools_service" />
+        android:key="@string/key_shifttools_service"
+        android:summaryOff="@string/summaryOff_shifttools_service"
+        android:summaryOn="@string/summaryOn_shifttools_service"
+        android:title="@string/label_shifttools_service" />
     
-    <mobi.cyann.nstools.preference.FileSelectPreference
+    <mobi.cyann.shifttools.preference.FileSelectPreference
         android:key="@string/key_load_settings"
         android:summary="@string/summary_load_settings"
         android:title="@string/label_load_settings"
@@ -40,7 +40,7 @@
         android:negativeButtonText="@string/label_cancel"
         android:persistent="false"/>
 
-	<mobi.cyann.nstools.preference.FileSelectPreference
+	<mobi.cyann.shifttools.preference.FileSelectPreference
         android:key="@string/key_delete_settings"
         android:summary="@string/summary_delete_settings"
         android:title="@string/label_delete_settings"

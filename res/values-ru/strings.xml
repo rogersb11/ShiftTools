@@ -44,9 +44,9 @@
 	<string name="label_restore_on_initd">Использ. скрипт init.d</string>
     <string name="summaryOn_restore_on_initd">Применять настройки через скрипт init.d</string>
     <string name="summaryOff_restore_on_initd">Применять настройки через событие загрузки Android</string>
-    <string name="label_nstools_service">Служба NSTools</string>
-    <string name="summaryOn_nstools_service">Включить службу для уведомления о пропущенных звонках и настройки таймаута</string>
-    <string name="summaryOff_nstools_service">Отключить службу для уведомления о пропущенных звонках и настройки таймаута</string>
+    <string name="label_shifttools_service">Служба ShiftTools</string>
+    <string name="summaryOn_shifttools_service">Включить службу для уведомления о пропущенных звонках и настройки таймаута</string>
+    <string name="summaryOff_shifttools_service">Отключить службу для уведомления о пропущенных звонках и настройки таймаута</string>
     <string name="label_load_settings">Загрузить</string>
     <string name="summary_load_settings">Загрузить настройки из файла</string>
     <string name="label_save_settings">Сохранить</string>
@@ -56,8 +56,8 @@
     <string name="label_delete_settings">Удалить</string>
     <string name="summary_delete_settings">Удалить файл с настройками</string>
     <string name="label_about">О программе</string>
-    <string name="about_text">NSTools на форуме XDA</string>
-    <string name="about_desc">Посетите тему NSTools на форуме XDA</string>
+    <string name="about_text">ShiftTools на форуме XDA</string>
+    <string name="about_desc">Посетите тему ShiftTools на форуме XDA</string>
     <string name="label_cpu_tweak">Процессор</string>
     <string name="label_governor">Управление частотой</string>
     <string name="label_min_cpufreq">Мин. частота</string>

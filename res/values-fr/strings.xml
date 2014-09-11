@@ -50,8 +50,8 @@
     <string name="label_delete_settings">Supprimer</string>
     <string name="summary_delete_settings">Supprimer le fichier sauvegardé</string>
 	<string name="label_about">À propos</string>
-    <string name="about_text">NSTools sur XDA</string>
-    <string name="about_desc">Visitez le forum NSTools sur XDA</string>
+    <string name="about_text">ShiftTools sur XDA</string>
+    <string name="about_desc">Visitez le forum ShiftTools sur XDA</string>
     <string name="label_cpu_tweak">CPU</string>
     <string name="label_governor">Gouverneur</string>
     <string name="label_min_cpufreq">Fréquence min processeur</string>
