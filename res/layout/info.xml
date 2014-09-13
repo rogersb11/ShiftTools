@@ -19,14 +19,8 @@
     <PreferenceCategory android:title="Author" >
     <Preference
         android:title="Author"
-        android:summary="Dominik Baronelli (derteufel1980)">
+        android:summary="Brett Rogers (rogersb11)">
     </Preference>
-    </PreferenceCategory>
-
-    <PreferenceCategory android:title="@string/label_donation" >
-        <PreferenceScreen
-            android:key="@string/key_donation"
-            android:summary="@string/donation_text" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/label_about" >
