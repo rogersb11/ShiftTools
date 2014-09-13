@@ -4,7 +4,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-package mobi.cyann.deviltools;
+package mobi.cyann.shifttools;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.MemoryInfo;
@@ -42,9 +42,6 @@ public class InfoFragment extends PreferenceListFragment implements OnPreference
 	Preference about = findPreference(getString(R.string.key_about));
 	about.setOnPreferenceClickListener(this);
 	about.setTitle(getString(R.string.app_name)+ " " + getString(R.string.app_version));
-
-	Preference donation = findPreference(getString(R.string.key_donation));
-	donation.setOnPreferenceClickListener(this);
         
     }
 
@@ -53,12 +50,12 @@ public class InfoFragment extends PreferenceListFragment implements OnPreference
 		if(preference.getKey().equals(getString(R.string.key_about))) {
 			Intent browse = new Intent();
 			browse.setAction(Intent.ACTION_VIEW);
-			browse.setData(Uri.parse(getString(R.string.deviltools_thread_url)));
+			browse.setData(Uri.parse(getString(R.string.shifttools_thread_url)));
 			startActivity(browse);
 		}else if(preference.getKey().equals(getString(R.string.key_donation))) {
 			Intent browse = new Intent();
 			browse.setAction(Intent.ACTION_VIEW);
-			browse.setData(Uri.parse(getString(R.string.deviltools_donation_url)));
+			browse.setData(Uri.parse(getString(R.string.shifttools_donation_url)));
 			startActivity(browse);
 		}
 		return false;
