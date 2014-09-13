@@ -125,21 +125,7 @@
             custom:step="1"
             android:summary="0"
             android:title="@string/label_cmled_blinktimeout" />
-
-    <mobi.cyann.shifttools.preference.RemovablePreferenceCategory android:title="@string/vibration_intensity" >
-
-        <mobi.cyann.shifttools.preference.IntegerPreference
-            custom:interfacePath="/sys/class/misc/pwm_duty/pwm_duty"
-            android:key="@string/key_vibration_intensity"
-            custom:maxValue="100"
-            custom:metrics="%"
-            custom:minValue="0"
-            custom:step="1"
-            android:summary="0"
-            android:title="@string/label_vibration_intensity" />
     </mobi.cyann.shifttools.preference.RemovablePreferenceCategory>
-
-
     <mobi.cyann.shifttools.preference.RemovablePreferenceCategory android:title="@string/iosched_tweak" >
         <mobi.cyann.shifttools.preference.IoSchedPreference
             custom:interfacePath="/sys/block/mmcblk0/queue/scheduler"
