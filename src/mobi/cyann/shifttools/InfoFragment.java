@@ -52,11 +52,6 @@ public class InfoFragment extends PreferenceListFragment implements OnPreference
 			browse.setAction(Intent.ACTION_VIEW);
 			browse.setData(Uri.parse(getString(R.string.shifttools_thread_url)));
 			startActivity(browse);
-		}else if(preference.getKey().equals(getString(R.string.key_donation))) {
-			Intent browse = new Intent();
-			browse.setAction(Intent.ACTION_VIEW);
-			browse.setData(Uri.parse(getString(R.string.shifttools_donation_url)));
-			startActivity(browse);
 		}
 		return false;
 	}
