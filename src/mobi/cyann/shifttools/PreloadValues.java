@@ -41,7 +41,7 @@ public class PreloadValues {
 		}catch(Exception ex) {
 			Log.e(LOG_TAG, "fail to read preload file", ex);
 			SysCommand sc = SysCommand.getInstance();
-			int r = sc.suRun("chmod", "0755", "/data/data/mobi.cyann.deviltools/preload.prop");
+			int r = sc.suRun("chmod", "0755", "/data/data/mobi.cyann.shifttools/preload.prop");
 			if(r < 0) {
 			Log.e(LOG_TAG, sc.getLastError(0));
 		}
