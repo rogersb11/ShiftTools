@@ -76,6 +76,8 @@
 
     <!-- CPU Activity -->
     <string name="label_cpu_tweak">CPU</string>
+    <string name="label_idle_mode">Idle Mode</string>
+    <string name="title_idle_mode">Set Idle Mode</string>
     <string name="label_governor">Governor</string>
     <string name="label_min_cpufreq">Min CPU freq</string>
     <string name="label_max_cpufreq">Max CPU freq</string>
@@ -141,6 +143,18 @@
 	<string name="label_interactive_hispeed_freq">Hispeed freq</string>
 	<string name="label_interactive_min_sample_time">Min sample time</string>
 	<string name="label_interactive_timer_rate">Timer rate</string>
+
+	<!-- Battery -->
+	<string name="label_battery_tweak">Charging Control</string>
+	<string name="label_dcp_ac_input_curr">DCP AC Input Current</string>
+	<string name="label_dcp_ac_chrg_curr">DCP AC Charge Current</string>
+	<string name="label_sdp_input_curr">SDP Input Current</string>
+	<string name="label_sdp_chrg_curr">SDP Charge Current</string>
+	<string name="label_cdp_input_curr">CDP Input Current</string>
+	<string name="label_cdp_chrg_curr">CDP Charge Current</string>
+	<string name="label_ignore_stable_margin">Ignore 100mA safety margin</string>
+	<string name="label_ignore_unstable_power">Ignore unstable power detection</string>
+	<string name="label_batt_chrg_soft_volt">Charge Soft voltage</string>
 
 	<string name="msg_kernel_changed">Settings discarded because the kernel version has changed</string>
 

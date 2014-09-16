@@ -93,6 +93,12 @@ public class SettingsManager {
 			command.append("echo " + value + " > " + "/sys/class/misc/deepidle/enabled\n");
 		}
 
+		// Idle Mode
+		value = preferences.getInt(c.getString(R.string.key_idle_mode), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/module/cpuidle_exynos4/parameters/enable_mask\n");
+		}
+
 		// Smooth Ui
 		value = preferences.getInt(c.getString(R.string.key_smooth_ui_enabled), -1);
 		if(value > -1) {
@@ -257,6 +263,54 @@ public class SettingsManager {
 				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/lulzactive/down_sample_time\n");
 			}
 		}
+
+		// battery
+		value = preferences.getInt(c.getString(R.string.key_dcp_ac_input_curr), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/dcp_ac_input_curr\n");
+		}
+
+		value = preferences.getInt(c.getString(R.string.key_dcp_ac_chrg_curr), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/dcp_ac_chrg_curr\n");
+		}
+
+		value = preferences.getInt(c.getString(R.string.key_sdp_input_curr), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/sdp_input_curr\n");
+		}
+
+		value = preferences.getInt(c.getString(R.string.key_sdp_chrg_curr), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/sdp_chrg_curr\n");
+		}
+
+		value = preferences.getInt(c.getString(R.string.key_cdp_input_curr), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/cdp_input_curr\n");
+		}
+
+		value = preferences.getInt(c.getString(R.string.key_cdp_chrg_curr), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/cdp_chrg_curr\n");
+		}
+
+		value = preferences.getInt(c.getString(R.string.key_batt_chrg_soft_volt), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/batt_chrg_soft_volt\n");
+		}
+
+		value = preferences.getInt(c.getString(R.string.key_ignore_stable_margin), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/ignore_stable_margin\n");
+		}
+
+		value = preferences.getInt(c.getString(R.string.key_ignore_unstable_power), -1);
+		if(value > -1) {
+			command.append("echo " + value + " > " + "/sys/devices/platform/samsung-battery/ignore_unstable_power\n");
+		}
+
+
 		// cmled
 		value = preferences.getInt(c.getString(R.string.key_cmled_bltimeout), -1);
 		if(value > -1) {

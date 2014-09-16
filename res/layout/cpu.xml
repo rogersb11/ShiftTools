@@ -3,14 +3,18 @@
     xmlns:custom="http://schemas.android.com/apk/res/mobi.cyann.shifttools"
     android:key="root" >
 
-    <mobi.cyann.shifttools.preference.RemovablePreferenceCategory android:title="@string/general_governor" >
+    <mobi.cyann.shifttools.preference.RemovablePreferenceCategory android:title="@string/label_idle_mode" >
+    <mobi.cyann.shifttools.preference.IntegerPreference
+        custom:interfacePath="/sys/module/cpuidle_exynos4/parameters/enable_mask"
+        android:key="@string/key_idle_mode"
+            custom:maxValue="3"
+            custom:minValue="0"
+            custom:step="1"
+	    custom:description="0 = IDLE, 1 = AFTR\n2 = IDLE+LPA, 3 = AFTR+LPA (best powersaving)"
+            android:summary="0"
+        android:title="@string/title_idle_mode" />
+   </mobi.cyann.shifttools.preference.RemovablePreferenceCategory>
 
-        <mobi.cyann.shifttools.preference.StatusPreference
-            custom:interfacePath="/sys/class/misc/shift_tweaks/smooth_ui_enabled"
-            android:key="@string/key_smooth_ui_enabled"
-            android:summary="@string/status_not_available"
-            android:title="@string/label_smooth_ui_enabled" />
-    </mobi.cyann.shifttools.preference.RemovablePreferenceCategory>
 
     <mobi.cyann.shifttools.preference.ListPreference
         custom:interfacePath="/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor"

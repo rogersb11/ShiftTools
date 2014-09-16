@@ -80,6 +80,10 @@ public class MainActivity extends FragmentActivity {
 		TabSpec tab5 = tabHost.newTabSpec("info");
 		tab5.setIndicator(getString(R.string.label_info), res.getDrawable(R.drawable.ic_tab_info));
 		tabsAdapter.addTab(tab5, InfoFragment.class, null);
+
+		TabSpec tab6 = tabHost.newTabSpec("chargingcontrol");
+		tab6.setIndicator(getString(R.string.label_battery_tweak));
+		tabsAdapter.addTab(tab6, BatteryFragment.class, null);
 		
 		if (savedInstanceState != null) {
             tabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));
